@@ -7,7 +7,7 @@ if ($request.url.includes('https://m.ujia007.com/ujia_mall/api/product/getProduc
 
 // 
 if ($request.url.includes('https://m.ujia007.com/ujia_mall/api/product/getProduct')) {
-  body = body.replace(/"stock":\s*"\d+"/g, '"stock": "1"');
+  body = body.replace(/"stock":\s*\d+/g, '"stock": 1');
 }
 
 $done({ body });
