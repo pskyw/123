@@ -7,6 +7,6 @@ if ($request.url.includes('https://psbc.huajifen.com/gateway/merchant/product/')
 
 // 
 if ($request.url.includes('https://psbc.huajifen.com/gateway/merchant/product/')) {
-          body = body.replace(/"currentTime":\s*"(\d{4})\/(\d{2})\/(\d{2}) (\d{2}):(\d{2}):(\d{2})"/g, '"currentTime":"2023/10/21 09:30:00"');
+          body = body.replace(/"currentTime":\s*"(\d{4})\/(\d{2})\/(\d{2}) (\d{2}):(\d{2}):(\d{2})"/g, '"currentTime":"2023/10/28 09:30:00"');
 }
 $done({ body });
