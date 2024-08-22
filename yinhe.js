@@ -6,7 +6,7 @@ if ($request.url.includes('https://rest-sig.imaitix.com')) {
 }
 // 
 if ($request.url.includes('https://rest-sig.imaitix.com')) {
-  body = body.replace(/"code":\s*"15180006"/g, '"code":"200"');
+  body = body.replace(/"code":\s*"\d+"/g, '"code":"200"');
 }
 
 $done({ body });
